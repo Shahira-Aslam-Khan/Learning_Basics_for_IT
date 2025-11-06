@@ -1,0 +1,196 @@
+🧭 GitHub Learning Manual (Step-by-Step Guide for Beginners)
+📘 Part 1: Understanding the Basics
+What is Git & GitHub?
+
+Git → A version control system that tracks changes in your code.
+
+GitHub → A website/platform that hosts Git repositories online and helps people collaborate on projects.
+
+Think of Git as your tool, and GitHub as your online storage + teamwork hub.
+
+🧰 Part 2: Setting Up
+Step 1: Create a GitHub Account
+
+Go to https://github.com
+
+Click Sign up
+
+Choose a username, email, and password
+
+Verify your email to activate the account
+
+✅ Done! You now have a GitHub account.
+
+Step 2: Install Git
+
+Visit https://git-scm.com/downloads
+
+Download for your OS (Windows, macOS, Linux)
+
+Follow installation steps with default options
+
+Open your terminal (Command Prompt or Git Bash)
+
+Run:
+
+git --version
+
+
+→ You should see something like git version 2.xx.x
+
+Step 3: Configure Git
+
+In your terminal, set your name and email:
+
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+
+This info shows up when you make commits.
+
+📁 Part 3: Creating Your First Repository
+Step 1: Create a Repo on GitHub
+
+Log in to GitHub
+
+Click the + icon (top-right) → New repository
+
+Give it a name (e.g., my-first-repo)
+
+Choose Public or Private
+
+Optionally check “Add a README file”
+
+Click Create repository
+
+✅ You’ve created your first GitHub repo!
+
+Step 2: Clone the Repo to Your Computer
+
+Copy the repository’s HTTPS URL (it looks like this):
+
+https://github.com/your-username/my-first-repo.git
+
+
+Then in your terminal:
+
+git clone https://github.com/your-username/my-first-repo.git
+
+
+Now, you have a local copy of the repository!
+
+To go inside it:
+
+cd my-first-repo
+
+💻 Part 4: Working with Files
+Step 1: Create or Edit Files
+
+You can create a file, e.g.:
+
+echo "Hello GitHub!" > hello.txt
+
+
+Or open the folder in your code editor (like VS Code) and edit files.
+
+Step 2: Check Changes
+
+To see what changed:
+
+git status
+
+Step 3: Add and Commit Changes
+
+Add your file to Git:
+
+git add hello.txt
+
+
+(You can add all files with git add .)
+
+Commit your changes:
+
+git commit -m "Add hello.txt"
+
+Step 4: Push to GitHub
+
+Send your changes online:
+
+git push
+
+
+Go back to your GitHub page — you’ll see your file there! 🎉
+
+🔄 Part 5: Updating Your Work
+
+If someone else made changes (or you edited on GitHub), get the newest version:
+
+git pull
+
+🌿 Part 6: Using Branches
+
+Branches let you work on new features safely.
+
+Create a Branch
+git branch new-feature
+git checkout new-feature
+
+Make Changes, Commit, and Push
+git add .
+git commit -m "Work on new feature"
+git push --set-upstream origin new-feature
+
+Create a Pull Request (PR)
+
+Go to your repo on GitHub
+
+You’ll see a Compare & pull request button
+
+Add a message and click Create pull request
+
+After review, you (or a teammate) can click Merge to bring the branch into main.
+
+🧹 Part 7: Keeping Things Clean
+
+After merging a branch, you can delete it:
+
+git branch -d new-feature
+
+
+And on GitHub, click Delete branch for the remote one.
+
+🤝 Part 8: Collaborating with Others
+Fork a Repository
+
+If you want to contribute to someone else’s project:
+
+Go to their repo
+
+Click Fork (creates your copy)
+
+Clone your fork and make changes
+
+Create a Pull Request to suggest changes
+
+🧭 Part 9: Common Git Commands Cheat Sheet
+Action	Command
+Check Git version	git --version
+Check status	git status
+Add files	git add .
+Commit	git commit -m "message"
+Push	git push
+Pull	git pull
+View history	git log
+Create branch	git branch branch-name
+Switch branch	git checkout branch-name
+Merge branch	git merge branch-name
+Delete branch	git branch -d branch-name
+🎯 Part 10: Practice Project Ideas
+
+Try these to build muscle memory:
+
+Create a “Notes” repo and upload daily learning logs.
+
+Work with a friend — make branches and pull requests.
+
+Try resolving a merge conflict (intentionally edit the same file in two branches).
